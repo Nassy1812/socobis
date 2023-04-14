@@ -5,9 +5,11 @@ QList<CoupureElectricite> CoupureElectriciteRepository::getAll(){
     q.exec("SELECT * FROM coupure_electricite");
     while(q.next()){
         CoupureElectricite c;
-        c.heure_debut = q.value("heure_debut").toDateTime();
-        c.heure_fin = q.value("heure_fin").toDateTime();
+        c.date_debut = q.value("date_debut").toDateTime();
+        c.date_fin = q.value("date_fin").toDateTime();
         c.id = q.value("id").toInt();
+        c.consommation = q.value("consommation").toInt();
+        c.montant = q.value("montant").toInt();
         coupures.append(c);
     }
     return coupures;
@@ -20,18 +22,23 @@ CoupureElectricite CoupureElectriciteRepository::getOneById(int id){
     q.addBindValue(id);
     q.exec();
     if(q.first()){
-        c.heure_debut = q.value("heure_debut").toDateTime();
-        c.heure_fin = q.value("heure_fin").toDateTime();
+        c.date_debut = q.value("date_debut").toDateTime();
+        c.date_fin = q.value("date_fin").toDateTime();
         c.id = q.value("id").toInt();
+        c.consommation = q.value("consommation").toInt();
+        c.montant = q.value("montant").toInt();
     }
     return c;
 }
 
+
 QSqlError CoupureElectriciteRepository::addOne(CoupureElectricite c){
     QSqlQuery q;
-    q.prepare("INSERT INTO coupure_electricite(heure_debut, heure_fin) VALUES(?,?)");
-    q.addBindValue(c.heure_debut);
-    q.addBindValue(c.heure_fin);
+    q.prepare("INSERT INTO coupure_electricite(date_debut, date_fin, consommation, montant) VALUES(?,?,?,?)");
+    q.addBindValue(c.date_debut);
+    q.addBindValue(c.date_fin);
+    q.addBindValue(c.consommation);
+    q.addBindValue(c.montant);
     if(!q.exec())
         return q.lastError();
     return QSqlError();

@@ -4,7 +4,6 @@
 #include <QDialog>
 #include "models/piece.h"
 
-
 namespace Ui {
 class AddPieceDialog;
 }
@@ -35,6 +34,7 @@ private:
     Ui::AddPieceDialog *ui;
     int sous_ensemble_id;
     Piece piece;
+
 };
 
 #endif // ADDPIECEDIALOG_H

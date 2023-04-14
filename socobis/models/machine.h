@@ -19,7 +19,9 @@ public:
     QString image;
     int frequence_panne;
     QDateTime date_ajout;
-
+    int nombre_panne;
+    int temps_arret;
+    int temps_moyen_arret;
 };
 
 #endif // MACHINE_H

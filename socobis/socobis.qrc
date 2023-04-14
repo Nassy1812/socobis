@@ -91,5 +91,6 @@
         <file>assets/images/User.png</file>
         <file>assets/images/avatar3.png</file>
         <file>assets/images/avatar5.png</file>
+        <file>assets/images/clock-fill.svg</file>
     </qresource>
 </RCC>

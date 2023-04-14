@@ -2,6 +2,7 @@
 #define STOCK_H
 #include<QDateTime>
 #include<QString>
+#include "models/marchandise.h"
 
 class Stock
 {
@@ -12,7 +13,7 @@ public:
     int type; //0 if entrant, 1 if sortant
     int id_marchandise;
     int quantite;
-    int prix;
+    Marchandise marchandise;
 
 };
 

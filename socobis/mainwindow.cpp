@@ -1,7 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
-#include "model.h"
+
+#include "Form/logindialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -11,15 +12,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
     ui->statusbar->hide();
-
-    if(!model::initDb()){
-        QMessageBox::critical(this,
-                                       "Socobis",
-                                       "Le fichier socobis.db est introuvale, "
-                                       "Réinstaller le logiciel peut corriger cette erreur");
-        qApp->exit();
-
-    }
 
     //Instantiation des controllers
     machineController = new MachineController;
@@ -33,9 +25,21 @@ MainWindow::MainWindow(QWidget *parent)
     ui->contentLayout->addWidget(tabController);
     actualContent = tabController;
 
+    ui->storyBtn->setVisible(false);
+
     //connect(ui->machineBtn, SIGNAL(rightClicked(QPoint)), this, SLOT(on_machineBtn_rightClicked(QPoint)));
 
-    showMaximized();
+    LoginDialog *login = new LoginDialog;
+    login->open();
+
+    QObject::connect(login,&LoginDialog::login_ok,this,[=](){
+        login->close();
+        showMaximized();
+    });
+
+    connect(login,&LoginDialog::finished,this,[=](){
+       close();
+    });
 }
 
 MainWindow::~MainWindow()
@@ -53,6 +57,7 @@ void MainWindow::setContent(QWidget *widget){
 
 void MainWindow::on_bordBtn_clicked()
 {
+    tabController->updateView();
     setContent(tabController);
 }
 

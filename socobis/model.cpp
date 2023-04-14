@@ -4,6 +4,7 @@
 
 bool model::initDb(){
     bool dbExists = QFile::exists("socobis.db");
+
     if(!dbExists)
         return false;
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");

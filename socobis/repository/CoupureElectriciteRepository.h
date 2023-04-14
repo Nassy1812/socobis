@@ -12,6 +12,7 @@ QList<CoupureElectricite> getAll();
 CoupureElectricite getOneById(int id);
 
 QSqlError addOne(CoupureElectricite c);
+
 }
 
 #endif // COUPUREELECTRICITEREPOSITORY_H

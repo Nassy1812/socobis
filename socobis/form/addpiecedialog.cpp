@@ -12,6 +12,7 @@ AddPieceDialog::AddPieceDialog(int sous_ensemble_id,int piece_id,QWidget *parent
     ui(new Ui::AddPieceDialog)
 {
     ui->setupUi(this);
+    setWindowFlag(Qt::Widget);
     this->sous_ensemble_id = sous_ensemble_id;
     Sous_ensemble sens = SousEnsembleRepository::getOneById(sous_ensemble_id);
     Ensemble ens = EnsembleRepository::getOneById(sens.id_ensemble);
@@ -31,6 +32,7 @@ AddPieceDialog::AddPieceDialog(int sous_ensemble_id,int piece_id,QWidget *parent
         ui->caracteristique->setText(this->piece.caracteristiques);
         ui->ficheTechnique->setPlainText(this->piece.fiche_technique);
     }
+
 }
 
 AddPieceDialog::~AddPieceDialog()

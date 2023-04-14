@@ -6,26 +6,205 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>757</width>
+    <height>413</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>110</y>
-     <width>121</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Analyse des pannes</string>
-   </property>
-  </widget>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="storyTab">
+      <attribute name="icon">
+       <iconset>
+        <normalon>:/assets/images/Calender.png</normalon>
+       </iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Historique des pannes</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Du</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateEdit" name="beginDate">
+              <property name="displayFormat">
+               <string>d/M/yyyy</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+              <property name="timeSpec">
+               <enum>Qt::LocalTime</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Au</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDateEdit" name="endDate">
+              <property name="displayFormat">
+               <string>d/M/yyyy</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+              <property name="timeSpec">
+               <enum>Qt::LocalTime</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="newBtn">
+           <property name="text">
+            <string>Nouvel enregistrment de panne</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="storyTable">
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>true</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Date</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Heure</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Machine</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Ensemble/Sous-ensemble/Piece</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Compteur</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Diagnostique</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Intervention</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Remarques</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Action</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="analyseTab">
+      <attribute name="icon">
+       <iconset>
+        <normalon>:/assets/images/Preferences.png</normalon>
+       </iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Analyse des données</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="helpTab">
+      <attribute name="icon">
+       <iconset>
+        <normalon>:/assets/images/Info.png</normalon>
+       </iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Page d'aides</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

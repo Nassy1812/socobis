@@ -27,22 +27,7 @@
 
 </string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_6">
-   <property name="spacing">
-    <number>0</number>
-   </property>
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
-   <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
-    <number>0</number>
-   </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_15">
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
@@ -55,11 +40,317 @@
        </iconset>
       </attribute>
       <attribute name="title">
-       <string>Affichage</string>
+       <string>Personnel</string>
       </attribute>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Ajouter un nouveau personnel</string>
+              </property>
+              <property name="icon">
+               <iconset resource="../socobis.qrc">
+                <normaloff>:/assets/images/Add.png</normaloff>:/assets/images/Add.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_2">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="leftMargin">
+                <number>10</number>
+               </property>
+               <property name="topMargin">
+                <number>10</number>
+               </property>
+               <property name="rightMargin">
+                <number>10</number>
+               </property>
+               <property name="bottomMargin">
+                <number>10</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="frame_3">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QLabel" name="label_2">
+                    <property name="text">
+                     <string>Date</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateEdit" name="date_show">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="displayFormat">
+                     <string>d/M/yyyy</string>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>true</bool>
+                    </property>
+                    <property name="timeSpec">
+                     <enum>Qt::LocalTime</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_4">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                   <widget class="QLabel" name="label">
+                    <property name="text">
+                     <string>Rotation</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="rotation_combo">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_5">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLabel" name="label_3">
+                    <property name="text">
+                     <string>Équipe</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="equipeEdit">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_6">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="text">
+                     <string>Date de changement de rotation:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateEdit" name="dateFin_show">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                    <property name="displayFormat">
+                     <string>d/M/yyyy</string>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>true</bool>
+                    </property>
+                    <property name="timeSpec">
+                     <enum>Qt::UTC</enum>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <column>
+            <property name="text">
+             <string>Numéro ID</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../socobis.qrc">
+              <normaloff>:/assets/images/User.png</normaloff>:/assets/images/User.png</iconset>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Nom</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Spécialité</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../socobis.qrc">
+              <normaloff>:/assets/images/Tools.png</normaloff>:/assets/images/Tools.png</iconset>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Téléphone</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Photo</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../socobis.qrc">
+              <normaloff>:/assets/images/Photos.png</normaloff>:/assets/images/Photos.png</iconset>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Action</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_modifier">
+      <attribute name="icon">
+       <iconset>
+        <normalon>:/assets/images/Pencil.png</normalon>
+       </iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Modification</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_14">
        <property name="spacing">
-        <number>10</number>
+        <number>0</number>
        </property>
        <property name="leftMargin">
         <number>0</number>
@@ -74,658 +365,460 @@
         <number>0</number>
        </property>
        <item>
-        <widget class="QFrame" name="frame">
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <property name="spacing">
+          <number>0</number>
          </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
+         <property name="bottomMargin">
+          <number>10</number>
          </property>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <property name="spacing">
-           <number>10</number>
-          </property>
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>10</number>
-          </property>
-          <property name="rightMargin">
-           <number>0</number>
-          </property>
-          <property name="bottomMargin">
-           <number>0</number>
-          </property>
-          <item>
-           <widget class="QPushButton" name="pushButton">
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>300</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Ajouter un nouveau personnel</string>
-            </property>
-            <property name="icon">
-             <iconset resource="../socobis.qrc">
-              <normaloff>:/assets/images/Add.png</normaloff>:/assets/images/Add.png</iconset>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="frame_2">
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>300</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_3">
-             <property name="leftMargin">
-              <number>10</number>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="frame_9">
+             <property name="maximumSize">
+              <size>
+               <width>600</width>
+               <height>50</height>
+              </size>
              </property>
-             <property name="topMargin">
-              <number>10</number>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
              </property>
-             <property name="rightMargin">
-              <number>10</number>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
              </property>
-             <property name="bottomMargin">
-              <number>10</number>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Date de début de service</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="modifDate_debut">
+                <property name="displayFormat">
+                 <string>d/M/yyyy</string>
+                </property>
+                <property name="calendarPopup">
+                 <bool>true</bool>
+                </property>
+                <property name="timeSpec">
+                 <enum>Qt::LocalTime</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_10">
+             <property name="maximumSize">
+              <size>
+               <width>600</width>
+               <height>50</height>
+              </size>
              </property>
-             <item>
-              <widget class="QFrame" name="frame_3">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Tour</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="tourModif_combo">
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <item>
-                 <widget class="QLabel" name="label_2">
-                  <property name="text">
-                   <string>Date</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
+                 <property name="text">
+                  <string>Equipe A</string>
+                 </property>
                 </item>
                 <item>
-                 <widget class="QDateEdit" name="date_show">
-                  <property name="maximumSize">
-                   <size>
-                    <width>100</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                  </property>
-                  <property name="displayFormat">
-                   <string>d/M/yyyy</string>
-                  </property>
-                  <property name="calendarPopup">
-                   <bool>true</bool>
-                  </property>
-                  <property name="timeSpec">
-                   <enum>Qt::UTC</enum>
-                  </property>
-                 </widget>
+                 <property name="text">
+                  <string>Equipe B</string>
+                 </property>
                 </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_4">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="tourModif_edit">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_11">
+             <property name="maximumSize">
+              <size>
+               <width>600</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>Rotation</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="rotationModif_combo">
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <item>
-                 <widget class="QLabel" name="label">
-                  <property name="text">
-                   <string>Rotation</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QComboBox" name="rotation_combo">
-                  <property name="maximumSize">
-                   <size>
-                    <width>100</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_5">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <item>
-                 <widget class="QLabel" name="label_3">
-                  <property name="text">
-                   <string>Équipe</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
+                 <property name="text">
+                  <string>JOUR</string>
+                 </property>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="equipeEdit">
-                  <property name="maximumSize">
-                   <size>
-                    <width>100</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="readOnly">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
+                 <property name="text">
+                  <string>NUIT</string>
+                 </property>
                 </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_6">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_5">
-                <item>
-                 <widget class="QLabel" name="label_4">
-                  <property name="text">
-                   <string>Date de changement de rotation:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QDateEdit" name="dateFin_show">
-                  <property name="maximumSize">
-                   <size>
-                    <width>100</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="readOnly">
-                   <bool>true</bool>
-                  </property>
-                  <property name="displayFormat">
-                   <string>d/M/yyyy</string>
-                  </property>
-                  <property name="calendarPopup">
-                   <bool>true</bool>
-                  </property>
-                  <property name="timeSpec">
-                   <enum>Qt::UTC</enum>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="tableWidget">
-         <column>
-          <property name="text">
-           <string>Numéro ID</string>
-          </property>
-          <property name="icon">
-           <iconset resource="../socobis.qrc">
-            <normaloff>:/assets/images/User.png</normaloff>:/assets/images/User.png</iconset>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Nom</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Spécialité</string>
-          </property>
-          <property name="icon">
-           <iconset resource="../socobis.qrc">
-            <normaloff>:/assets/images/Tools.png</normaloff>:/assets/images/Tools.png</iconset>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Téléphone</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Photo</string>
-          </property>
-          <property name="icon">
-           <iconset resource="../socobis.qrc">
-            <normaloff>:/assets/images/Photos.png</normaloff>:/assets/images/Photos.png</iconset>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Action</string>
-          </property>
-         </column>
-        </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="rotationModif_edit">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_12">
+             <property name="maximumSize">
+              <size>
+               <width>600</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>Durée de la tour (en jour)</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="dureeModif_spin">
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>365</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_13">
+             <property name="maximumSize">
+              <size>
+               <width>600</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <item>
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Date de changement de rotation</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="dateFin_modif">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+                <property name="displayFormat">
+                 <string>d/M/yyyy</string>
+                </property>
+                <property name="calendarPopup">
+                 <bool>true</bool>
+                </property>
+                <property name="timeSpec">
+                 <enum>Qt::LocalTime</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="saveModif_btn">
+           <property name="text">
+            <string>Sauvegarder</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_14">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_modifier">
+     <widget class="QWidget" name="tab_ajout">
       <attribute name="icon">
-       <iconset resource="../socobis.qrc">
-        <normaloff>:/assets/images/Pencil.png</normaloff>:/assets/images/Pencil.png</iconset>
+       <iconset>
+        <normalon>:/assets/images/Add.png</normalon>
+       </iconset>
       </attribute>
       <attribute name="title">
-       <string>Modification</string>
+       <string>Ajout d'un personnel</string>
       </attribute>
-      <widget class="QFrame" name="frame_9">
+      <widget class="QWidget" name="">
        <property name="geometry">
         <rect>
-         <x>100</x>
-         <y>25</y>
-         <width>300</width>
-         <height>50</height>
+         <x>400</x>
+         <y>270</y>
+         <width>168</width>
+         <height>26</height>
         </rect>
        </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QPushButton" name="annuleEditBtn">
+          <property name="text">
+           <string>Annuler</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="saveEditBtn">
+          <property name="text">
+           <string>Sauvegarder</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>11</y>
+         <width>558</width>
+         <height>252</height>
+        </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
-         <widget class="QLabel" name="label_5">
-          <property name="text">
-           <string>Date de début de service</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDateEdit" name="modifDate_debut"/>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QFrame" name="frame_10">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>100</y>
-         <width>300</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_7">
-        <item>
-         <widget class="QLabel" name="label_6">
-          <property name="text">
-           <string>Tour</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="tourModif_combo">
+         <widget class="QFrame" name="frame_8">
           <property name="minimumSize">
            <size>
-            <width>100</width>
-            <height>0</height>
+            <width>300</width>
+            <height>250</height>
            </size>
           </property>
-          <item>
-           <property name="text">
-            <string>Equipe A</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Equipe B</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="tourModif_edit">
-          <property name="readOnly">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QFrame" name="frame_11">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>175</y>
-         <width>300</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_8">
-        <item>
-         <widget class="QLabel" name="label_7">
-          <property name="text">
-           <string>Rotation</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="rotationModif_combo">
-          <property name="minimumSize">
-           <size>
-            <width>100</width>
-            <height>0</height>
-           </size>
-          </property>
-          <item>
-           <property name="text">
-            <string>JOUR</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>NUIT</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="rotationModif_edit">
-          <property name="readOnly">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QFrame" name="frame_12">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>250</y>
-         <width>300</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_9">
-        <item>
-         <widget class="QLabel" name="label_8">
-          <property name="text">
-           <string>Durée de la tour (en jour)</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QSpinBox" name="dureeModif_spin">
-          <property name="minimum">
-           <number>1</number>
-          </property>
-          <property name="maximum">
-           <number>365</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QPushButton" name="saveModif_btn">
-       <property name="geometry">
-        <rect>
-         <x>175</x>
-         <y>400</y>
-         <width>150</width>
-         <height>30</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Sauvegarder</string>
-       </property>
-      </widget>
-      <widget class="QFrame" name="frame_13">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>325</y>
-         <width>300</width>
-         <height>50</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLabel" name="label_9">
-          <property name="text">
-           <string>Date de changement de rotation</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDateEdit" name="dateFin_modif">
-          <property name="readOnly">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-     </widget>
-     <widget class="QWidget" name="tab_ajout">
-      <attribute name="icon">
-       <iconset resource="../socobis.qrc">
-        <normaloff>:/assets/images/Notepad.png</normaloff>:/assets/images/Notepad.png</iconset>
-      </attribute>
-      <attribute name="title">
-       <string>Edition d'un Personnel</string>
-      </attribute>
-      <widget class="QFrame" name="frame_7">
-       <property name="geometry">
-        <rect>
-         <x>310</x>
-         <y>10</y>
-         <width>261</width>
-         <height>291</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
-        <item>
-         <widget class="QLabel" name="imgLabel">
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="../socobis.qrc">:/assets/images/avatar5.png</pixmap>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="parcourirBtn">
-          <property name="text">
-           <string>Parcourir</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QFrame" name="frame_8">
-       <property name="geometry">
-        <rect>
-         <x>7</x>
-         <y>13</y>
-         <width>251</width>
-         <height>331</height>
-        </rect>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
-        <property name="bottomMargin">
-         <number>0</number>
-        </property>
-        <item>
-         <widget class="QLineEdit" name="id_edit">
-          <property name="placeholderText">
-           <string>numéro d'identification</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="nom_edit">
-          <property name="placeholderText">
-           <string>Nom et prénoms</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="tel_edit">
-          <property name="placeholderText">
-           <string>téléphone</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="spec_combo">
-          <property name="placeholderText">
-           <string>Spécialité</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="equipe_combo">
-          <property name="placeholderText">
-           <string>Equipe</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="state_label">
           <property name="maximumSize">
            <size>
-            <width>16777215</width>
-            <height>50</height>
+            <width>300</width>
+            <height>250</height>
            </size>
           </property>
-          <property name="text">
-           <string>Tous les champs doivent être remplis convenablement.</string>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
           </property>
-          <property name="wordWrap">
-           <bool>true</bool>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
           </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="id_edit">
+             <property name="placeholderText">
+              <string>numéro d'identification</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="nom_edit">
+             <property name="placeholderText">
+              <string>Nom et prénoms</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="tel_edit">
+             <property name="placeholderText">
+              <string>téléphone</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="spec_combo">
+             <property name="placeholderText">
+              <string>Spécialité</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="equipe_combo">
+             <property name="placeholderText">
+              <string>Equipe</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="state_label">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Tous les champs doivent être remplis convenablement.</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_7">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>250</width>
+            <height>250</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="imgLabel">
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../socobis.qrc">:/assets/images/avatar5.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="parcourirBtn">
+             <property name="text">
+              <string>Parcourir</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </item>
        </layout>
-      </widget>
-      <widget class="QPushButton" name="saveEditBtn">
-       <property name="geometry">
-        <rect>
-         <x>490</x>
-         <y>330</y>
-         <width>80</width>
-         <height>24</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Sauvegarder</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="annuleEditBtn">
-       <property name="geometry">
-        <rect>
-         <x>390</x>
-         <y>330</y>
-         <width>80</width>
-         <height>24</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Annuler</string>
-       </property>
       </widget>
      </widget>
     </widget>

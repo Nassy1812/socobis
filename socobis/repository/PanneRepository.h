@@ -10,10 +10,12 @@
 namespace PanneRepository {
 
 QSqlError addOne(Panne p);
+QSqlError update(Panne p);
 
 QList<Panne> getAll();
 
 Panne getOneById(int id);
+
 }
 
 #endif // PANNEREPOSITORY_H

@@ -7,8 +7,10 @@ class CoupureElectricite{
 public:
     CoupureElectricite(){};
     int id;
-    QDateTime heure_debut;
-    QDateTime heure_fin;
+    QDateTime date_debut;
+    QDateTime date_fin;
+    int consommation;
+    int montant;
 };
 
 #endif // COUPUREELECTRICITE_H

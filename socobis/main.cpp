@@ -1,11 +1,27 @@
 #include "mainwindow.h"
+#include "model.h"
 
 #include <QApplication>
 #include <QFile>
+#include <QLocale>
+#include <QMessageBox>
+
 int main(int argc, char *argv[])
 {
 
     QApplication a(argc, argv);
+    QLocale locale(QLocale::French,QLocale::Madagascar);
+    QLocale::setDefault(locale);
+
+    if(!model::initDb()){
+        QMessageBox::critical(nullptr,
+                                       "Socobis",
+                                       "Le fichier socobis.db est introuvale, "
+                                       "Réinstaller le logiciel peut corriger cette erreur");
+        return -1;
+
+    }
+
 //    QFile f(":/assets/qss/pagefold.qss");
 
 //    if (!f.exists())   {
@@ -17,9 +33,9 @@ int main(int argc, char *argv[])
 //        a.setStyleSheet(ts.readAll());
 //    }
 
-
+//    QApplication::setStyle(QStyleFactory::create("Fusion"));
     MainWindow w;
-    w.show();
+    w.hide();
 
     return a.exec();
 }

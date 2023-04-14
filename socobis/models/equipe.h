@@ -21,7 +21,7 @@ class Equipe
 {
 public:
     Equipe(){};
-    int id;
+    int id=0;
     QString name;
     bool is_tour;
     QString rotation;
